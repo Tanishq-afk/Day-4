@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <form class="form-wrapper">
+        <div class="form-header">
+          <div class="row-header title">HTML Form</div>
+          <div class="row-header account">tanishq.sachdev@unthinkable.co 
+          <a href="#">Switch account</a>
+          <div class="description">The name, email, and photo associated with your Google account will be recorded when you upload files and submit this form</div>
+          </div>
+          <div class="row-header required-text">* Indicates required question</div>
+        </div>
+        <div class="question-card">
+            <label class="question-title">
+              Full Name: <span class="required">*</span>
+            </label>
+            <input type="text" placeholder="Your answer" required>
+        </div>
+        <div class="question-card">
+            <label class="question-title">
+              Email: <span class="required">*</span>
+            </label>
+            <input type="email" placeholder="Your answer" required>
+        </div>
+        <div class="question-card">
+            <label class="question-title">
+              Password: <span class="required">*</span>
+            </label>
+            <input type="password" placeholder="Your answer" minlength="6" required>
+        </div>
+        <div class="question-card">
+            <label class="question-title">
+              Enter Age:
+            </label>
+            <input type="number" placeholder="Your answer" min="1" max="120">
+        </div>
+        <div class="question-card">
+            <label class="question-title">
+              Date of Birth:
+            </label>
+            <input type="date" placeholder="Your answer">
+        </div>
+        <div class="question-card">
+            <label class="question-title">
+            Gender <span class="required">*</span>
+            </label>
+            <div class="radio-group">
+              <label><input type="radio" name="gender" value="Male" required> Male</label>
+              <label><input type="radio" name="gender" value="Female"> Female</label>
+              <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+        </div>
+        <div class="question-card">
+          <label class="question-title">Hobbies:</label>
+
+          <div class="checkbox-group">
+            <label>
+            <input type="checkbox" name="hobbies" value="Reading">
+            Reading
+            </label>
+
+            <label>
+            <input type="checkbox" name="hobbies" value="Sports">
+            Sports
+            </label>
+
+            <label>
+            <input type="checkbox" name="hobbies" value="Music">
+            Music
+            </label>
+          </div>
+        </div>
+        <div class="question-card">
+          <label class="question-title">
+          Country <span class="required">*</span>
+          </label>
+          <div class="select-wrapper">
+            <select name="country" required>
+              <option value="">-- Select Country --</option>
+              <option value="USA">USA</option>
+              <option value="India">India</option>
+              <option value="UK">UK</option>
+              <option value="Canada">Canada</option>
+            </select>
+          </div>
+        </div>
+        <div class="question-card">
+        <label class="question-title">
+        Message: <span class="required">*</span>
+        </label>
+
+        <textarea name="message" rows="3" placeholder="Your answer" required></textarea>
+      </div>
+      <div class="question-card">
+        <label class="question-title">
+        Upload File:
+      </label>
+
+      <input type="file" name="file">
+    </div>
+    <div class="question-card">
+      <label class="question-title">
+      Experience Level (0-10)
+      </label>
+
+      <input type="range" name="experience" min="0" max="10">
+    </div>
+  </form>
+  </body>
+</html>
