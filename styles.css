@@ -43,6 +43,7 @@ body {
   font-weight:500;
   padding-top:25px;
   line-height: 20px;
+  text-align: justify;
 }
 .required-text {
   color:#d93025;
